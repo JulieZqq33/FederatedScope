@@ -8,7 +8,7 @@ URL = 'https://github.com/alibaba/FederatedScope'
 
 minimal_requires = [
     'numpy<1.23.0', 'scikit-learn==1.0.2', 'scipy==1.7.3', 'pandas',
-    'grpcio>=1.45.0', 'grpcio-tools', 'pyyaml>=5.1', 'fvcore', 'iopath',
+    'grpcio-tools', 'grpcio>=1.45.0', 'pyyaml>=5.1', 'fvcore', 'iopath',
     'wandb', 'tensorboard', 'tensorboardX', 'pympler', 'protobuf==3.19.4'
 ]
 
@@ -24,7 +24,7 @@ benchmark_hpo_requires = [
 
 benchmark_htl_requires = ['learn2learn']
 
-with open("README.md", "r") as fh:
+with open("README.md", "r", encoding = 'utf-8') as fh:
     long_description = fh.read()
 
 setuptools.setup(

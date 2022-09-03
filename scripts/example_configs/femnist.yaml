@@ -1,11 +1,11 @@
-use_gpu: True
+use_gpu: False
 device: 0
 early_stop:
   patience: 5
 seed: 12345
 federate:
   mode: standalone
-  total_round_num: 300
+  total_round_num: 20
   sample_client_rate: 0.2
 data:
   root: data/
